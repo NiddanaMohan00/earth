@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   width: 100%;
+   height: 100vh;
+   background-image: url('images/corona.webp');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+  
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    /* background-color: rgba(250, 255, 255, 0.325); */
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+  
+    
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    column-gap: 30px;
+      position: sticky;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size:2rem;
+    background: linear-gradient(90deg,rgba(0, 0, 255, 0.751),white,rgb(0, 141, 197));
+    color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid rgb(192, 255, 128);
+    background-clip: text;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+   
+    
+}
+.nav ul li a:hover{
+    color: transparent;
+    background: linear-gradient(90deg,rgba(122, 238, 26, 0.873),white,rgba(0, 0, 255, 0.751));
+    background-clip: text;
+    border: 1px solid rgb(192, 255, 128);
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    transition: 0.5s ease-in-out;
+
+    
+}
+ .head-body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.879) ,green ,white,white,green ,white,white ,green ,white);
+    color:transparent;
+    background-clip: text;
+    font-size: 1rem;
+    font-weight: 600;
+    
+ }
+  span{
+    font-size: 3rem;
+  }
+  /*-------------------- climate CSS ------------------------------*/
+
+  .climate{
+   display: flex;
+
+   gap: 1rem;
+   padding: 1rem;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+  padding-top: 1rem;
+   background-color: rgba(211, 255, 213, 0.601);
+   /* height: 100vh; */
+   
+   
+    box-shadow: 0 0 20px rgb(104, 104, 248);
+   
+    
+  }
+  .climate-c1,.climate-c2,.climate-c3,.climate-c4,.climate-c5,.climate-c6{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 380px;
+    height: 300px;
+    background-color: rgba(151, 238, 255, 0.508);
+    box-shadow: 0 0 20px rgba(82, 107, 177, 0.852);
+    transition: 0.5s;
+    color: black;
+   
+    
+   
+  }
+    .c-img{
+    border-radius:20px;
+       transition: 0.5s;
+   }
+   .c-img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    border-radius:20px;
+    cursor: pointer;
+   }
+   .c-name{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: transparent;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+   }
+   .c-name:hover{
+    color: rgba(0, 0, 0, 0.584);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    cursor: pointer;
+   }
+   .climate-c1:hover,.climate-c2:hover,.climate-c3:hover,.climate-c4:hover,.climate-c5:hover,.climate-c6:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    border-radius:20px;
+    cursor: pointer;
+    
+   }
+   
+ /* @media (max-width: 400px) {
+    .climate{
+        flex-direction: column;
+        height: 1000px;
+    }
+    .climate-c1,.climate-c2,.climate-c3{
+        width: 100%;
+        height: 33.33%;
+    }
+ } */
+/* 
+ projects-css-------------------------------------------------------- */
+ *{
+        padding: 0;
+        margin: 0;
+    }
+    #first{
+    background-image: url("images/earth-projects.webp");
+    background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+    }
+    #first_child,#second_child{
+        display: flex;
+        align-items: center;
+        column-gap: 0.8rem;
+        row-gap: 2rem;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.796);
+        
+        /* background:linear-gradient(80deg,rgba(81, 175, 81, 0.399),rgba(250, 156, 156, 0.437),rgba(0, 0, 255, 0.642)); */
+        justify-content: space-between;
+        padding: 2rem;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #first_child img{
+        box-shadow: 0 0 5px rgb(255, 255, 255);
+        border-radius: 20px 50%;
+        transition: ease-in-out 0.7s;
+
+         
+    }
+     #first_child img:hover{
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        border-radius: 50% 10px;
+        transform: scale(0.8);
+        cursor: pointer;
+
+         
+
+    }
+    #second_child img{
+        box-shadow: 0 0 5px rgb(255, 255, 255);
+        border-radius: 20px 50%;
+        transition: ease-in-out 0.7s;
+
+        
+    }
+    #second_child img:hover{
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        border-radius: 50% 10px;
+        transform: scale(0.8);
+        cursor: pointer;
+    }
+    .child-text{
+       font-size: 20px;
+       font-family: 'Times New Roman', Times, serif;
+       color: rgb(255, 255, 255);
+       text-align: center;
+       padding: 10px;
+       margin: 10px;
+       border-radius: 10px;
+       background-color: rgba(0, 0, 0, 0.5);
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+       transition: all 0.4s ease-in-out;
+       transform: scale(0.8);
+       cursor: pointer;
+   }
+   .child-text:hover{
+       background-color: rgba(0, 0, 0, 0.8);
+       transform: scale(1);
+       box-shadow: 0 0 20px rgba(252, 230, 230, 0.8);
+       transition: all 0.6s ease-in-out;
+   }
+
+    
+    #first_child h2{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+    /* eco-system ---------------------------------------------*/
+  
+
+    .eco-body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url('images/eco-sys.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .eco-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .eco-n1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .eco-1 {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 15px;
+      width: 280px;
+      max-width: 90%;
+      text-align: center;
+      transition: all 0.4s ease;
+      box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .eco-1:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 128, 0, 0.3);
+      background-color: #f0fff4;
+    }
+
+    .eco-1 img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .eco-1:hover img {
+      transform: scale(1.1);
+    }
+
+    .eco-1 h2 {
+      font-size: 1.3rem;
+      margin: 10px 0 5px;
+      transition: color 0.3s;
+    }
+
+    .eco-1 h3 {
+      font-size: 1rem;
+      color: #444;
+      transition: color 0.3s;
+    }
+
+    .eco-1:hover h2,
+    .eco-1:hover h3 {
+      color: green;
+    }
+
+
+
+    
+
+    
+   
+   
+
+    
